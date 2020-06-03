@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "process"
+import PropTypes from "prop-types"
 
 function ContactCard(props) {
     return (
@@ -12,11 +12,11 @@ function ContactCard(props) {
     );
 }
 
-ContactCard.PropTypes = {
+ContactCard.propTypes = {
   name: PropTypes.string,
   mPhone: PropTypes.string,
   wPhone: PropTypes.string,
-  email :PropTypes.string
+  email: PropTypes.string
 }
 
 
