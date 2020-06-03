@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from "process"
 
 function ContactCard(props) {
     return (
@@ -11,5 +11,13 @@ function ContactCard(props) {
       </div>
     );
 }
+
+ContactCard.PropTypes = {
+  name: PropTypes.string,
+  mPhone: PropTypes.string,
+  wPhone: PropTypes.string,
+  email :PropTypes.string
+}
+
 
 export default ContactCard;
